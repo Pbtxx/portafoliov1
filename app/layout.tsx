@@ -14,8 +14,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Portafolio Pablo Martínez Canto",
-  description: "",
+  title: "Portafolio PMC",
+  description: "Portafolio de Pablo Martínez Canto",
 };
 
 export default function RootLayout({

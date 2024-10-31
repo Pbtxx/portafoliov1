@@ -39,16 +39,14 @@ export default function Component() {
                 </p>
               </div>
               <div className="flex gap-4 mt-6">
-              <Button variant="outline" className="bg-white text-black hover:bg-gray-200" asChild>
+                <Button variant="outline" className="bg-white text-black hover:bg-gray-200" asChild>
                   <a href="https://www.linkedin.com/in/pmartinezcanto" target="_blank" rel="noopener noreferrer">
                     <Linkedin className="mr-2 h-4 w-4" />
                     LinkedIn
                   </a>
                 </Button>
                 <Button variant="ghost" className="text-white border border-white hover:bg-white hover:text-black">
-                <a href="#contacto" >
-                Contactar
-                   </a>     
+                  <a href="#contacto">Contactar</a>
                 </Button>
               </div>
             </div>
@@ -58,7 +56,7 @@ export default function Component() {
           <div className="container mx-auto px-4 md:px-6">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl mb-8 text-center">Sobre Mí</h2>
             <p className="max-w-3xl mx-auto text-center">
-            Soy un apasionado de la tecnología y la innovación, con un enfoque constante en crear soluciones prácticas que aporten valor real a las personas y a las empresas. Como estudiante de Ingeniería Civil en Computación, en mi último año en la Universidad Tecnológica Metropolitana, busco desafíos que me permitan aplicar y expandir mis habilidades técnicas y de gestión en entornos reales. Mi objetivo es contribuir a proyectos que impulsen la eficiencia y la transformación digital, aprendiendo de cada experiencia y perfeccionando mi capacidad para resolver problemas complejos de manera creativa y eficaz.
+              Soy un apasionado de la tecnología y la innovación, con un enfoque constante en crear soluciones prácticas que aporten valor real a las personas y a las empresas. Como estudiante de Ingeniería Civil en Computación, en mi último año en la Universidad Tecnológica Metropolitana, busco desafíos que me permitan aplicar y expandir mis habilidades técnicas y de gestión en entornos reales. Mi objetivo es contribuir a proyectos que impulsen la eficiencia y la transformación digital, aprendiendo de cada experiencia y perfeccionando mi capacidad para resolver problemas complejos de manera creativa y eficaz.
             </p>
           </div>
         </section>
@@ -66,7 +64,8 @@ export default function Component() {
           <div className="container mx-auto px-4 md:px-6">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl mb-12 text-center text-white">Proyectos Destacados</h2>
             <div className="grid gap-10 md:grid-cols-3">
-              <Card className="bg-black border-white">
+              {/* Marketplace Digital */}
+              <Card className="bg-black border-white hover:transform hover:scale-105 transition-transform duration-300">
                 <CardHeader className="p-6">
                   <CardTitle className="text-xl md:text-2xl text-white">Marketplace Digital</CardTitle>
                   <CardDescription className="text-white">Alloxentric</CardDescription>
@@ -78,13 +77,15 @@ export default function Component() {
                   </ul>
                   <p className="text-sm text-gray-400">Tecnologías: Javascript, Vue, MongoDB, Docker</p>
                 </CardContent>
-                <CardFooter className="p-4 pt-0 flex justify-end">
+                <CardFooter className="p-4 pt-14 flex justify-end">
                   <a href="https://github.com/sebastiangc88/alloxentric_agente_vue2" className="text-white hover:text-gray-300 transition-colors" aria-label="Ver código en GitHub">
                     <Github className="h-6 w-6" />
                   </a>
                 </CardFooter>
               </Card>
-              <Card className="bg-black border-white">
+
+              {/* Traductor Automático */}
+              <Card className="bg-black border-white hover:transform hover:scale-105 transition-transform duration-300">
                 <CardHeader className="p-6">
                   <CardTitle className="text-xl md:text-2xl text-white">Traductor Automático Mapudungún - Español</CardTitle>
                   <CardDescription className="text-white">Universidad Tecnológica Metropolitana</CardDescription>
@@ -96,13 +97,15 @@ export default function Component() {
                   </ul>
                   <p className="text-sm text-gray-400">Tecnologías: Python, React, Transformers, NLTK</p>
                 </CardContent>
-                <CardFooter className="p-6 pt-0 flex justify-end">
+                <CardFooter className="p-4 pt-7 flex justify-end">
                   <a href="https://github.com/Pbtxx/traductor-mapudungun-espanol" className="text-white hover:text-gray-300 transition-colors" aria-label="Ver código en GitHub">
                     <Github className="h-6 w-6" />
                   </a>
                 </CardFooter>
               </Card>
-              <Card className="bg-black border-white">
+
+              {/* Análisis de Inflación */}
+              <Card className="bg-black border-white hover:transform hover:scale-105 transition-transform duration-300">
                 <CardHeader className="p-6">
                   <CardTitle className="text-xl md:text-2xl text-white">Análisis de Inflación</CardTitle>
                   <CardDescription className="text-white">Universidad Tecnológica Metropolitana</CardDescription>
@@ -112,9 +115,9 @@ export default function Component() {
                     <li>Desarrollo estadístico de inflación mediante técnicas de programación secuencial y paralela.</li>
                     <li>Implementación de tecnologías paralelas, mejorando el rendimiento y escabilidad del algoritmo en entornos multicore.</li>
                   </ul>
-                  <p className="text-sm text-gray-400">Tecnologías: C/C++, OpenMP, SQL </p>
+                  <p className="text-sm text-gray-400">Tecnologías: C/C++, OpenMP, SQL</p>
                 </CardContent>
-                <CardFooter className="p-4 flex justify-end">
+                <CardFooter className="p-4 pt-8 flex justify-end">
                   <a href="https://github.com/Pbtxx/inflacion-paralela" className="text-white hover:text-gray-300 transition-colors" aria-label="Ver código en GitHub">
                     <Github className="h-6 w-6" />
                   </a>
@@ -127,8 +130,8 @@ export default function Component() {
           <div className="container mx-auto px-4 md:px-6">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl mb-12 text-center">Habilidades</h2>
             <div className="flex flex-wrap justify-center gap-4">
-              {["Python", "C / C++", "MySQL", "Javascript", "MongoDB", "React" ,"Vue","Docker", "Grafana" ,"Agile", "Scrum"].map((skill) => (
-                <Badge key={skill} variant="outline" className="text-lg py-2 px-4 bg-black text-white border-white">
+              {["Python", "C / C++", "MySQL", "Javascript", "MongoDB", "React", "Vue", "Docker", "Grafana", "Agile", "Scrum"].map((skill) => (
+                <Badge key={skill} variant="outline" className="text-lg py-2 px-4 bg-black text-white border-white transform transition-transform duration-300 hover:scale-105 hover:bg-gray-800">
                   {skill}
                 </Badge>
               ))}
