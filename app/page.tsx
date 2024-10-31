@@ -78,7 +78,7 @@ export default function Component() {
                   <p className="text-sm text-gray-400">Tecnologías: Javascript, Vue, MongoDB, Docker</p>
                 </CardContent>
                 <CardFooter className="p-4 pt-14 flex justify-end">
-                  <a href="https://github.com/sebastiangc88/alloxentric_agente_vue2" className="text-white hover:text-gray-300 transition-colors" aria-label="Ver código en GitHub">
+                  <a href="https://github.com/sebastiangc88/alloxentric_agente_vue2" className="text-white hover:text-gray-300 transition-colors" target="_blank" rel="noopener noreferrer" aria-label="Ver código en GitHub">
                     <Github className="h-6 w-6" />
                   </a>
                 </CardFooter>
@@ -98,7 +98,7 @@ export default function Component() {
                   <p className="text-sm text-gray-400">Tecnologías: Python, React, Transformers, NLTK</p>
                 </CardContent>
                 <CardFooter className="p-4 pt-7 flex justify-end">
-                  <a href="https://github.com/Pbtxx/traductor-mapudungun-espanol" className="text-white hover:text-gray-300 transition-colors" aria-label="Ver código en GitHub">
+                  <a href="https://github.com/Pbtxx/traductor-mapudungun-espanol" className="text-white hover:text-gray-300 transition-colors" target="_blank" rel="noopener noreferrer" aria-label="Ver código en GitHub">
                     <Github className="h-6 w-6" />
                   </a>
                 </CardFooter>
@@ -118,7 +118,7 @@ export default function Component() {
                   <p className="text-sm text-gray-400">Tecnologías: C/C++, OpenMP, SQL</p>
                 </CardContent>
                 <CardFooter className="p-4 pt-8 flex justify-end">
-                  <a href="https://github.com/Pbtxx/inflacion-paralela" className="text-white hover:text-gray-300 transition-colors" aria-label="Ver código en GitHub">
+                  <a href="https://github.com/Pbtxx/inflacion-paralela" className="text-white hover:text-gray-300 transition-colors" target="_blank" rel="noopener noreferrer" aria-label="Ver código en GitHub">
                     <Github className="h-6 w-6" />
                   </a>
                 </CardFooter>
@@ -158,10 +158,10 @@ export default function Component() {
               </span>
             </div>
             <div className="flex gap-6 mt-4">
-              <a className="text-black hover:text-gray-600 transition-colors" href="https://github.com/Pbtxx" aria-label="GitHub">
+              <a className="text-black hover:text-gray-600 transition-colors" href="https://github.com/Pbtxx" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                 <Github className="h-6 w-6" />
               </a>
-              <a className="text-black hover:text-gray-600 transition-colors" href="https://www.linkedin.com/in/pmartinezcanto/" aria-label="LinkedIn">
+              <a className="text-black hover:text-gray-600 transition-colors" href="https://www.linkedin.com/in/pmartinezcanto/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                 <Linkedin className="h-6 w-6" />
               </a>
             </div>
