@@ -55,7 +55,7 @@ export default function Component() {
         <section id="sobre-mi" className="w-full py-16 md:py-24 bg-white text-black">
           <div className="container mx-auto px-4 md:px-6">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl mb-8 text-center">Sobre Mí</h2>
-            <p className="max-w-3xl mx-auto text-center">
+            <p className="max-w-3xl mx-auto text-justify text-lg md:text-xl">
               Soy un apasionado de la tecnología y la innovación, con un enfoque constante en crear soluciones prácticas que aporten valor real a las personas y a las empresas. Como estudiante de Ingeniería Civil en Computación, en mi último año en la Universidad Tecnológica Metropolitana, busco desafíos que me permitan aplicar y expandir mis habilidades técnicas y de gestión en entornos reales. Mi objetivo es contribuir a proyectos que impulsen la eficiencia y la transformación digital, aprendiendo de cada experiencia y perfeccionando mi capacidad para resolver problemas complejos de manera creativa y eficaz.
             </p>
           </div>
